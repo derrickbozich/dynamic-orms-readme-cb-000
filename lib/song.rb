@@ -58,7 +58,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    "SELECT * FROM WHERE name = #{name}"
+    "SELECT * FROM #{table_name_for_insert} WHERE name = #{name}"
   end
 
 end
